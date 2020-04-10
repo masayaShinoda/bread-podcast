@@ -13,6 +13,9 @@ import Header from "./header"
 import "./layout.css"
 import layoutStyles from "../styles/styles.css"
 
+// import favicons
+import "../assets/css/font-awesome.min.css"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {

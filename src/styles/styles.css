@@ -10793,18 +10793,18 @@ body h2 {
 
 body h1 {
   font-weight: 700;
-  line-height: 1.6;
+  line-height: 2.1;
 }
 
 body h2 {
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 body p {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 body a {
@@ -10830,7 +10830,7 @@ header div {
           align-items: center;
   margin: 0 auto;
   max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+  padding: 2.5vmax 1.25vmax;
   /*border: 1px solid red; /* debug */
   /*border: 1px solid green; /* debug */
 }
@@ -11092,8 +11092,54 @@ header .headerLogo:hover::after {
   padding: 0;
 }
 
+.aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutContainer .flexAbout {
+  margin-right: 2.5vmax;
+}
+
+.aboutContainer .flexContact {
+  padding: 2.5vmax;
+  border: 0.25vmin solid #0071b8;
+  border-radius: 1em;
+}
+
+.aboutContainer .flexContact a,
+.aboutContainer .flexContact span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutContainer .flexContact a p,
+.aboutContainer .flexContact span p {
+  margin: 1.25vmin 2.5vmin;
+}
+
+.aboutContainer h1,
+.aboutContainer h2 {
+  color: #004f80;
+}
+
+@media (max-width: 480px) {
+  .aboutContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutContainer .flexAbout {
+    padding: 0;
+  }
+}
+
 footer {
   display: block;
-  margin-top: 1.45em;
+  margin-top: 5vmax;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -10810,10 +10810,12 @@ body p {
 
 body a {
   color: #004f80;
+  text-decoration: none;
 }
 
 body a:hover {
   color: #0071b8;
+  text-decoration: none;
 }
 
 header div {
@@ -11088,9 +11090,12 @@ header .headerLogo:hover::after {
   display: block;
   position: relative;
   max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
   display: block;
+  margin-top: 1.45em;
 }
 /*# sourceMappingURL=styles.css.map */

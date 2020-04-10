@@ -53,9 +53,11 @@ body {
   }
   a {
     color: $clr-primary;
+    text-decoration: none;
   }
   a:hover {
     color: $clr-primary-brightened;
+    text-decoration: none;
   }
 }
 
@@ -246,6 +248,8 @@ header {
     display: block;
     position: relative;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
     //border: 1px solid red;
   }
 }
@@ -253,6 +257,6 @@ header {
 //footer
 footer {
   display: block;
-  //margin-top: 1.45em;
+  margin-top: 1.45em;
   //border: 1px solid green; //debug
 }

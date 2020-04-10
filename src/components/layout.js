@@ -36,7 +36,10 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © <a href="https://www.breaddesignstudio.com">Bread Design Studio </a>
+          ©{" "}
+          <a href="https://www.breaddesignstudio.com" target="_blank">
+            Bread Design Studio{" "}
+          </a>
           {new Date().getFullYear()}
         </footer>
       </div>

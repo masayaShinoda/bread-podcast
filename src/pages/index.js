@@ -6,11 +6,12 @@ import SEO from "../components/seo"
 
 //images import
 import imgHomepage from "../images/homepage-BP.png"
+import indexStyles from "../styles/styles.css"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="homePageContainer">
+    <div className="homepageContainer">
       <img src={imgHomepage} alt="Coming soon" className="homePageImage"></img>
     </div>
   </Layout>

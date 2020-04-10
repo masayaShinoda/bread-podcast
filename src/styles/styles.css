@@ -10784,7 +10784,6 @@ body {
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
-  min-height: 100vh;
 }
 
 body h1,
@@ -10849,8 +10848,7 @@ header div .headerNavSection {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1.45rem;
-  padding-bottom: 1.45rem;
+  padding: 1.45rem 0;
 }
 
 header div .headerNavSection .navbar {
@@ -11086,7 +11084,7 @@ header .headerLogo:hover::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 79, 128, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-.homePageContainer .homePageImage {
+.homepageContainer .homepageImage {
   display: block;
   position: relative;
   max-width: 100%;

@@ -29,14 +29,10 @@ const Header = ({ siteTitle }) => {
                   <NavLink href="/podcasts">Podcast</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">
-                    Blog
-                  </NavLink>
+                  <NavLink href="/blog">Blog</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink href="https://github.com/reactstrap/reactstrap">
-                    About
-                  </NavLink>
+                  <NavLink href="/about">About</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

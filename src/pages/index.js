@@ -4,9 +4,11 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+//styles import
+import indexStyles from "../styles/styles.css"
+
 //images import
 import imgHomepage from "../images/homepage-BP.png"
-import indexStyles from "../styles/styles.css"
 
 const IndexPage = () => (
   <Layout>

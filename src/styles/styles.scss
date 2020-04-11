@@ -93,6 +93,7 @@ header {
         margin: 0;
         padding: 0;
         .collapse.show.navbar-collapse {
+          //border: 1px solid red; //debug
           margin: 0;
           padding: 0;
           flex-basis: 0;
@@ -103,12 +104,12 @@ header {
         }
         .collapsing.navbar-collapse {
           // when navbar is collapsing
-          display: inine;
+          display: inline-block;
           padding: 0;
           margin: 0;
+          height: 0%; //how tf does this work so well
           flex-basis: 0;
           font-size: 1rem;
-          // doesnt display collapsing state
           .nav-item {
             margin-bottom: 0; // fix floating Link
             margin-right: 1rem; // spacing betweeen navs

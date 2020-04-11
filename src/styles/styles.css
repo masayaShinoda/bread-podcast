@@ -10880,9 +10880,10 @@ header div .headerNavSection .navbarConfig .collapse.show.navbar-collapse .nav-i
 }
 
 header div .headerNavSection .navbarConfig .collapsing.navbar-collapse {
-  display: inine;
+  display: inline-block;
   padding: 0;
   margin: 0;
+  height: 0%;
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   font-size: 1rem;

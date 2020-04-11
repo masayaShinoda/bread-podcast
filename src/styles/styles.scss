@@ -103,9 +103,9 @@ header {
         }
         .collapsing.navbar-collapse {
           // when navbar is collapsing
+          display: inine;
           padding: 0;
           margin: 0;
-          height: 2rem !important;
           flex-basis: 0;
           font-size: 1rem;
           // doesnt display collapsing state

@@ -15,9 +15,11 @@
 // variables
 $clr-primary: #004f80;
 $clr-primary-brightened: #0071b8;
+$clr-primary-darkmode: #dbf1ff;
 $clr-secondary: #e73531;
-$clr-bg: #fdfdfd;
+$clr-light: #fdfdfd;
 $clr-dark: #333333;
+$clr-bg-dark: #696969;
 $font-heading: Ubuntu, sans-serif;
 $font-primary: Roboto, sans-serif;
 $desktop-bp: 1024px;
@@ -25,7 +27,7 @@ $tablet-bp: 1023px;
 $mobile-bp: 480px;
 
 // global
-body {
+.parent.light {
   display: flex;
   flex-direction: column;
   background: url("pattern-svg.svg");
@@ -34,8 +36,10 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
+
   h1,
   h2 {
+    color: $clr-dark;
     font-family: $font-heading;
   }
   h1 {
@@ -47,6 +51,7 @@ body {
     line-height: 1.8;
   }
   p {
+    color: $clr-dark;
     font-family: $font-primary;
     font-weight: 400;
     line-height: 1.6;
@@ -61,11 +66,49 @@ body {
   }
 }
 
+.parent.dark {
+  display: flex;
+  flex-direction: column;
+  background: url("pattern-svg-dark.svg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  h1,
+  h2 {
+    font-family: $font-heading;
+    color: $clr-light;
+  }
+  h1 {
+    font-weight: 700;
+    line-height: 2.1;
+  }
+  h2 {
+    font-weight: 500;
+    line-height: 1.8;
+  }
+  p {
+    color: $clr-light;
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  a {
+    color: $clr-primary-darkmode;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $clr-primary-brightened;
+    text-decoration: none;
+  }
+}
+
 // header component
 header {
   //margin-bottom: 1.45rem;
   //box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.075);
-  //background: $clr-bg;
+  //background: $clr-light;
   div {
     display: flex;
     flex-direction: row;

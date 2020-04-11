@@ -1,0 +1,20 @@
+// imports
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
+
+// Bootstrap scss
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// variables
+$clr-primary: #004f80;
+$clr-primary-brightened: #0071b8;
+$clr-primary-darkmode: #dbf1ff;
+$clr-secondary: #e73531;
+$clr-light: #fdfdfd;
+$clr-dark: #333333;
+$font-heading: Ubuntu, sans-serif;
+$font-primary: Roboto, sans-serif;
+$desktop-bp: 1024px;
+$tablet-bp: 1023px;
+$mobile-bp: 480px;

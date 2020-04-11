@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 import layoutStyles from "../styles/styles.css"
+import lightAndDarknessStyles from "../styles/light-and-darkness.css"
 
 // import favicons
 import "../assets/css/font-awesome.min.css"
@@ -29,22 +30,24 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          ©{" "}
-          <a href="https://www.breaddesignstudio.com" target="_blank">
-            Bread Design Studio{" "}
-          </a>
-          {new Date().getFullYear()}
-        </footer>
+      <div className="parent dark">
+        <Header siteTitle={data.site.siteMetadata.title} />
+        <div
+          style={{
+            margin: `0 auto`,
+            maxWidth: 960,
+            padding: `0 1.0875rem 1.45rem`,
+          }}
+        >
+          <main>{children}</main>
+          <footer>
+            ©{" "}
+            <a href="https://www.breaddesignstudio.com" target="_blank">
+              Bread Design Studio{" "}
+            </a>
+            {new Date().getFullYear()}
+          </footer>
+        </div>
       </div>
     </>
   )

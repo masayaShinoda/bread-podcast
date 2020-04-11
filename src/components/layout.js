@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div className="parent dark">
+      <div className="parent light">
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{

@@ -25,7 +25,11 @@ const AboutPage = () => (
       </div>
       <div className="flexContact">
         <h2>Contact:</h2>
-        <a href="mailto:info@breaddesignstudio.com" target="_blank">
+        <a
+          href="mailto:info@breaddesignstudio.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i className="fa fa-envelope"></i>
           <p>info@breaddesignstudio.com</p>
         </a>

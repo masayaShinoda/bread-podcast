@@ -15,7 +15,7 @@
 // variables
 $clr-primary: #004f80;
 $clr-primary-brightened: #0071b8;
-$clr-primary-darkmode: #dbf1ff;
+$clr-primary-darkmode: #40b8ff;
 $clr-secondary: #e73531;
 $clr-light: #fdfdfd;
 $clr-dark: #333333;
@@ -39,7 +39,7 @@ $mobile-bp: 480px;
 
   h1,
   h2 {
-    color: $clr-dark;
+    color: $clr-primary;
     font-family: $font-heading;
   }
   h1 {
@@ -59,10 +59,27 @@ $mobile-bp: 480px;
   a {
     color: $clr-primary;
     text-decoration: none;
+    p {
+      color: $clr-primary;
+      margin: 1.25vmin 2.5vmin;
+    }
   }
   a:hover {
     color: $clr-primary-brightened;
     text-decoration: none;
+    .fa {
+      //fa when container link is hovered
+      color: $clr-primary-brightened;
+    }
+    p {
+      color: $clr-primary-brightened;
+    }
+  }
+  .fa {
+    color: $clr-primary;
+  }
+  footer {
+    color: $clr-dark;
   }
 }
 
@@ -77,8 +94,8 @@ $mobile-bp: 480px;
   min-height: 100vh;
   h1,
   h2 {
+    color: $clr-primary-brightened;
     font-family: $font-heading;
-    color: $clr-light;
   }
   h1 {
     font-weight: 700;
@@ -97,10 +114,27 @@ $mobile-bp: 480px;
   a {
     color: $clr-primary-darkmode;
     text-decoration: none;
+    p {
+      color: $clr-primary-darkmode;
+      margin: 1.25vmin 2.5vmin;
+    }
   }
   a:hover {
     color: $clr-primary-brightened;
     text-decoration: none;
+    .fa {
+      //fa when container link is hovered
+      color: $clr-primary-brightened;
+    }
+    p {
+      color: $clr-primary-brightened;
+    }
+  }
+  .fa {
+    color: $clr-primary-darkmode;
+  }
+  footer {
+    color: $clr-light;
   }
 }
 

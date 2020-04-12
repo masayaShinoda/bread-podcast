@@ -9,7 +9,7 @@ import aboutStyles from "../styles/styles.css"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <div className="aboutContainer">
       <div className="flexAbout">
         <h1>About us</h1>

@@ -10790,7 +10790,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .parent.light h1,
 .parent.light h2 {
-  color: #333333;
+  color: #004f80;
   font-family: Ubuntu, sans-serif;
 }
 
@@ -10816,9 +10816,30 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 
+.parent.light a p {
+  color: #004f80;
+  margin: 1.25vmin 2.5vmin;
+}
+
 .parent.light a:hover {
   color: #0071b8;
   text-decoration: none;
+}
+
+.parent.light a:hover .fa {
+  color: #0071b8;
+}
+
+.parent.light a:hover p {
+  color: #0071b8;
+}
+
+.parent.light .fa {
+  color: #004f80;
+}
+
+.parent.light footer {
+  color: #333333;
 }
 
 .parent.dark {
@@ -10839,8 +10860,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .parent.dark h1,
 .parent.dark h2 {
+  color: #0071b8;
   font-family: Ubuntu, sans-serif;
-  color: #fdfdfd;
 }
 
 .parent.dark h1 {
@@ -10861,13 +10882,34 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .parent.dark a {
-  color: #dbf1ff;
+  color: #40b8ff;
   text-decoration: none;
+}
+
+.parent.dark a p {
+  color: #40b8ff;
+  margin: 1.25vmin 2.5vmin;
 }
 
 .parent.dark a:hover {
   color: #0071b8;
   text-decoration: none;
+}
+
+.parent.dark a:hover .fa {
+  color: #0071b8;
+}
+
+.parent.dark a:hover p {
+  color: #0071b8;
+}
+
+.parent.dark .fa {
+  color: #40b8ff;
+}
+
+.parent.dark footer {
+  color: #fdfdfd;
 }
 
 header div {

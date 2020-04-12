@@ -6,7 +6,9 @@
  */
 
 import React from "react"
+import Helmet from "react-helmet"
 import PropTypes from "prop-types"
+import { withPrefix, Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
@@ -30,6 +32,9 @@ const Layout = ({ children }) => {
 
   return (
     <>
+      <Helmet>
+        <script src={withPrefix("script.js")} type="text/javascript" />
+      </Helmet>
       <div className="parent light">
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
@@ -46,6 +51,11 @@ const Layout = ({ children }) => {
               Bread Design Studio{" "}
             </a>
             {new Date().getFullYear()}
+            <a
+              className="fa fa-moon-o"
+              id="goDark"
+              style={{ marginLeft: `1.25vmax`, cursor: `pointer` }}
+            ></a>
           </footer>
         </div>
       </div>

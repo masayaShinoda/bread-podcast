@@ -47,15 +47,12 @@ const Layout = ({ children }) => {
           <main>{children}</main>
           <footer>
             ©{" "}
-            <a href="https://www.breaddesignstudio.com" target="_blank">
-              Bread Design Studio{" "}
-            </a>
+            <a href="https://www.breaddesignstudio.com">Bread Design Studio </a>
             {new Date().getFullYear()}
             <a
               className="fa fa-moon-o"
               id="goDark"
               style={{ marginLeft: `1.25vmax`, cursor: `pointer` }}
-              //onClick={goDark()}
             ></a>
           </footer>
         </div>
@@ -63,18 +60,6 @@ const Layout = ({ children }) => {
     </>
   )
 }
-
-/*const goDark = () => {
-  const parent = document.querySelector(".parent.light")
-  const goDarkBtn = document.querySelector("#goDark")
-
-  if (goDarkBtn) {
-    goDarkBtn.addEventListener("click", function() {
-      //after parent is switched to dark, change moon to sun
-      parent.classList.toggle("dark")
-    })
-  }
-}*/
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

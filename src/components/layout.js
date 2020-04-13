@@ -33,7 +33,12 @@ const Layout = ({ children }) => {
   return (
     <>
       <Helmet>
-        <script src={withPrefix("script.js")} type="text/javascript" />
+        <script
+          src={
+            "https://cdn.jsdelivr.net/gh/masayaShinoda/bread-podcast@master/static/script.js"
+          }
+          type="text/javascript"
+        />
       </Helmet>
       <div className="parent light">
         <Header siteTitle={data.site.siteMetadata.title} />

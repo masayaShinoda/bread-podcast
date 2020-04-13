@@ -34,6 +34,12 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <script src={withPrefix("script.js")} type="text/javascript" />
+        <script
+          src={withPrefix(
+            "https://github.com/masayaShinoda/bread-podcast/blob/master/src/components/layout.js"
+          )}
+          type="text/javascript"
+        />
       </Helmet>
       <div className="parent light">
         <Header siteTitle={data.site.siteMetadata.title} />

@@ -34,12 +34,6 @@ const Layout = ({ children }) => {
     <>
       <Helmet>
         <script src={withPrefix("script.js")} type="text/javascript" />
-        <script
-          src={withPrefix(
-            "https://gist.github.com/masayaShinoda/c04f142eea4a69545c4140c5b0848f82.js"
-          )}
-          type="text/javascript"
-        />
       </Helmet>
       <div className="parent light">
         <Header siteTitle={data.site.siteMetadata.title} />
@@ -59,7 +53,7 @@ const Layout = ({ children }) => {
               className="fa fa-moon-o"
               id="goDark"
               style={{ marginLeft: `1.25vmax`, cursor: `pointer` }}
-              onClick={goDark()}
+              //onClick={goDark()}
             ></a>
           </footer>
         </div>
@@ -68,7 +62,7 @@ const Layout = ({ children }) => {
   )
 }
 
-const goDark = () => {
+/*const goDark = () => {
   const parent = document.querySelector(".parent.light")
   const goDarkBtn = document.querySelector("#goDark")
 
@@ -78,7 +72,7 @@ const goDark = () => {
       parent.classList.toggle("dark")
     })
   }
-}
+}*/
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

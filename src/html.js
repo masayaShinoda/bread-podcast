@@ -11,7 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <script src="https://github.com/masayaShinoda/bread-podcast/blob/master/src/components/layout.js">
+        <script src="https://github.com/masayaShinoda/bread-podcast/blob/master/static/script.js">
           {}
         </script>
         {props.headComponents}

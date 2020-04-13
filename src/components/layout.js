@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
         <script src={withPrefix("script.js")} type="text/javascript" />
         <script
           src={withPrefix(
-            "https://github.com/masayaShinoda/bread-podcast/blob/master/static/script.js"
+            "https://gist.github.com/masayaShinoda/c04f142eea4a69545c4140c5b0848f82.js"
           )}
           type="text/javascript"
         />

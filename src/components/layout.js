@@ -32,15 +32,15 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <script
-          src={
-            "https://cdn.jsdelivr.net/gh/masayaShinoda/bread-podcast@master/static/script.js"
-          }
-          type="text/javascript"
-        />
-      </Helmet>
       <div className="parent light">
+        <Helmet>
+          <script
+            src={
+              "https://cdn.jsdelivr.net/gh/masayaShinoda/bread-podcast@master/static/script.js"
+            }
+            type="text/javascript"
+          />
+        </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{

@@ -27,7 +27,7 @@ $tablet-bp: 1023px;
 $mobile-bp: 480px;
 
 // global
-.parent.light {
+body.light {
   display: flex;
   flex-direction: column;
   background: url("pattern-svg.svg");
@@ -83,7 +83,7 @@ $mobile-bp: 480px;
   }
 }
 
-.parent.dark {
+body.dark {
   display: flex;
   flex-direction: column;
   background: url("pattern-svg-dark.svg");

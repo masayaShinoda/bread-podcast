@@ -10772,7 +10772,7 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
-.parent.light {
+body.light {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10788,61 +10788,61 @@ a.text-dark:hover, a.text-dark:focus {
   min-height: 100vh;
 }
 
-.parent.light h1,
-.parent.light h2 {
+body.light h1,
+body.light h2 {
   color: #004f80;
   font-family: Ubuntu, sans-serif;
 }
 
-.parent.light h1 {
+body.light h1 {
   font-weight: 700;
   line-height: 2.1;
 }
 
-.parent.light h2 {
+body.light h2 {
   font-weight: 500;
   line-height: 1.8;
 }
 
-.parent.light p {
+body.light p {
   color: #333333;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
 
-.parent.light a {
+body.light a {
   color: #004f80;
   text-decoration: none;
 }
 
-.parent.light a p {
+body.light a p {
   color: #004f80;
   margin: 1.25vmin 2.5vmin;
 }
 
-.parent.light a:hover {
+body.light a:hover {
   color: #0071b8;
   text-decoration: none;
 }
 
-.parent.light a:hover .fa {
+body.light a:hover .fa {
   color: #0071b8;
 }
 
-.parent.light a:hover p {
+body.light a:hover p {
   color: #0071b8;
 }
 
-.parent.light .fa {
+body.light .fa {
   color: #004f80;
 }
 
-.parent.light footer {
+body.light footer {
   color: #333333;
 }
 
-.parent.dark {
+body.dark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10858,57 +10858,57 @@ a.text-dark:hover, a.text-dark:focus {
   min-height: 100vh;
 }
 
-.parent.dark h1,
-.parent.dark h2 {
+body.dark h1,
+body.dark h2 {
   color: #0071b8;
   font-family: Ubuntu, sans-serif;
 }
 
-.parent.dark h1 {
+body.dark h1 {
   font-weight: 700;
   line-height: 2.1;
 }
 
-.parent.dark h2 {
+body.dark h2 {
   font-weight: 500;
   line-height: 1.8;
 }
 
-.parent.dark p {
+body.dark p {
   color: #fdfdfd;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   line-height: 1.6;
 }
 
-.parent.dark a {
+body.dark a {
   color: #40b8ff;
   text-decoration: none;
 }
 
-.parent.dark a p {
+body.dark a p {
   color: #40b8ff;
   margin: 1.25vmin 2.5vmin;
 }
 
-.parent.dark a:hover {
+body.dark a:hover {
   color: #0071b8;
   text-decoration: none;
 }
 
-.parent.dark a:hover .fa {
+body.dark a:hover .fa {
   color: #0071b8;
 }
 
-.parent.dark a:hover p {
+body.dark a:hover p {
   color: #0071b8;
 }
 
-.parent.dark .fa {
+body.dark .fa {
   color: #40b8ff;
 }
 
-.parent.dark footer {
+body.dark footer {
   color: #fdfdfd;
 }
 

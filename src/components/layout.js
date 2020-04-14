@@ -6,7 +6,6 @@
  */
 
 import React from "react"
-import Helmet from "react-helmet"
 import PropTypes from "prop-types"
 import { withPrefix, Link } from "gatsby"
 import { useStaticQuery, graphql } from "gatsby"
@@ -18,6 +17,9 @@ import lightAndDarknessStyles from "../styles/light-and-darkness.css"
 
 // import favicons
 import "../assets/css/font-awesome.min.css"
+
+// import themtoggler
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -31,15 +33,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="parent light">
-      <Helmet>
-        <script
-          src={
-            "https://cdn.jsdelivr.net/gh/masayaShinoda/bread-podcast@master/static/script.js"
-          }
-          type="text/javascript"
-        />
-      </Helmet>
+    <div className="parent">
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
@@ -52,11 +46,25 @@ const Layout = ({ children }) => {
         <footer>
           © <a href="https://www.breaddesignstudio.com">Bread Design Studio </a>
           {new Date().getFullYear()}
-          <a
-            className="fa fa-moon-o"
-            id="goDark"
-            style={{ marginLeft: `1.25vmax`, cursor: `pointer` }}
-          ></a>
+          <ThemeToggler>
+            {({ theme, toggleTheme }) => (
+              <label>
+                <input
+                  type="checkbox"
+                  onChange={e =>
+                    toggleTheme(e.target.checked ? "dark" : "light")
+                  }
+                  checked={theme === "dark"}
+                  style={{ visibility: `hidden` }}
+                />{" "}
+                <i
+                  className="fa fa-moon-o"
+                  style={{ cursor: `pointer`, padding: `.5vmax` }}
+                  title="Enable/Disable Dark Mode"
+                ></i>
+              </label>
+            )}
+          </ThemeToggler>
         </footer>
       </div>
     </div>

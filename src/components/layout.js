@@ -31,30 +31,35 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
-      <div className="parent light">
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0 1.0875rem 1.45rem`,
-          }}
-        >
-          <main>{children}</main>
-          <footer>
-            ©{" "}
-            <a href="https://www.breaddesignstudio.com">Bread Design Studio </a>
-            {new Date().getFullYear()}
-            <a
-              className="fa fa-moon-o"
-              id="goDark"
-              style={{ marginLeft: `1.25vmax`, cursor: `pointer` }}
-            ></a>
-          </footer>
-        </div>
+    <div className="parent light">
+      <Helmet>
+        <script
+          src={
+            "https://cdn.jsdelivr.net/gh/masayaShinoda/bread-podcast@master/static/script.js"
+          }
+          type="text/javascript"
+        />
+      </Helmet>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
+        <main>{children}</main>
+        <footer>
+          © <a href="https://www.breaddesignstudio.com">Bread Design Studio </a>
+          {new Date().getFullYear()}
+          <a
+            className="fa fa-moon-o"
+            id="goDark"
+            style={{ marginLeft: `1.25vmax`, cursor: `pointer` }}
+          ></a>
+        </footer>
       </div>
-    </>
+    </div>
   )
 }
 

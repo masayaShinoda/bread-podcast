@@ -13,14 +13,6 @@ import imgHomepage from "../images/homepage-BP.png"
 
 const IndexPage = () => (
   <Layout>
-    <Helmet>
-      <script
-        src={
-          "https://cdn.jsdelivr.net/gh/masayaShinoda/bread-podcast@master/static/script.js"
-        }
-        type="text/javascript"
-      />
-    </Helmet>
     <SEO title="Home" />
     <div className="homepageContainer">
       <img src={imgHomepage} alt="Coming soon" className="homePageImage"></img>

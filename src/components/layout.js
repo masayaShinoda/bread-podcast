@@ -59,7 +59,11 @@ const Layout = ({ children }) => {
                 />{" "}
                 <i
                   className="fa fa-moon-o"
-                  style={{ cursor: `pointer`, padding: `.5vmax` }}
+                  style={{
+                    display: `flex`,
+                    cursor: `pointer`,
+                    padding: `.5vmax`,
+                  }}
                   title="Enable/Disable Dark Mode"
                 ></i>
               </label>

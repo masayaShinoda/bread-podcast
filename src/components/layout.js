@@ -27,6 +27,8 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          copyright
+          parent_company_url
         }
       }
     }
@@ -44,7 +46,10 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © <a href="https://www.breaddesignstudio.com">Bread Design Studio </a>
+          ©{" "}
+          <a href={data.site.siteMetadata.parent_company_url}>
+            {data.site.siteMetadata.copyright}{" "}
+          </a>
           {new Date().getFullYear()}
           <ThemeToggler>
             {({ theme, toggleTheme }) => (

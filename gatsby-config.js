@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Breadcast Podcast`,
+    title: `Bread Podcast`,
     description: `Based in Phnom Penh, Cambodia.`,
     author: `Masaya Shida`,
+    copyright: `Bread Design Studios`,
+    parent_company_url: `https://www.breaddesignstudio.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -28,6 +30,14 @@ module.exports = {
       },
     },
     "gatsby-plugin-dark-mode",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `src`,
+        path: `${__dirname}/src/`, //tells gatsby to source content from filesystem, which is src dir
+      },
+    },
+    "gatsby-transformer-remark",
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

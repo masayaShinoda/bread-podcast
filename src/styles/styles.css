@@ -11198,10 +11198,6 @@ header .headerLogo:hover::after {
   padding: 0;
 }
 
-.blogContainer .colorful-shadow {
-  border: 1px solid red;
-}
-
 .blogContainer ul {
   list-style-type: none;
   margin: 0;
@@ -11249,7 +11245,16 @@ header .headerLogo:hover::after {
   font-size: 2em;
   line-height: 1.4;
   border-bottom: 2px solid #e73531;
-  max-width: 80%;
+  max-width: 65%;
+}
+
+@media (max-width: 1023px) {
+  .blogTemplate .blogPostTitle {
+    font-size: 2em;
+    line-height: 1.4;
+    border-bottom: 2px solid #e73531;
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 480px) {

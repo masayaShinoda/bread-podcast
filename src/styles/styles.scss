@@ -344,9 +344,6 @@ header {
 
 // blog page blog.js
 .blogContainer {
-  .colorful-shadow {
-    border: 1px solid red;
-  }
   ul {
     list-style-type: none;
     margin: 0;
@@ -391,7 +388,15 @@ header {
     font-size: 2em;
     line-height: 1.4;
     border-bottom: 2px solid $clr-secondary;
-    max-width: 80%;
+    max-width: 65%;
+  }
+  @media (max-width: $tablet-bp) {
+    .blogPostTitle {
+      font-size: 2em;
+      line-height: 1.4;
+      border-bottom: 2px solid $clr-secondary;
+      max-width: 80%;
+    }
   }
   @media (max-width: $mobile-bp) {
     .blogPostTitle {

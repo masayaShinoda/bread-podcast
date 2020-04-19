@@ -11249,6 +11249,16 @@ header .headerLogo:hover::after {
   font-size: 2em;
   line-height: 1.4;
   border-bottom: 2px solid #e73531;
+  max-width: 80%;
+}
+
+@media (max-width: 480px) {
+  .blogTemplate .blogPostTitle {
+    font-size: 2em;
+    line-height: 1.4;
+    border-bottom: 2px solid #e73531;
+    max-width: 100%;
+  }
 }
 
 .blogTemplate .blogContent {
@@ -11273,16 +11283,22 @@ header .headerLogo:hover::after {
 }
 
 .blogTemplate .blogContent p {
-  max-width: 80%;
+  max-width: 65%;
 }
 
 @media (max-width: 1023px) {
+  .blogTemplate .blogContent p {
+    max-width: 80%;
+  }
   .blogTemplate .blogContent figure {
     max-width: 65%;
   }
 }
 
 @media (max-width: 480px) {
+  .blogTemplate .blogContent p {
+    max-width: 100%;
+  }
   .blogTemplate .blogContent figure {
     max-width: 100%;
   }

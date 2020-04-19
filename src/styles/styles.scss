@@ -391,6 +391,15 @@ header {
     font-size: 2em;
     line-height: 1.4;
     border-bottom: 2px solid $clr-secondary;
+    max-width: 80%;
+  }
+  @media (max-width: $mobile-bp) {
+    .blogPostTitle {
+      font-size: 2em;
+      line-height: 1.4;
+      border-bottom: 2px solid $clr-secondary;
+      max-width: 100%;
+    }
   }
   .blogContent {
     margin: 5vh 0;
@@ -401,7 +410,6 @@ header {
       img {
         border-radius: 2.5vmin;
         color: $clr-bg-dark;
-        //box-shadow: 5px 3px lighten($clr-secondary, 10%);
       }
     }
     h2 {
@@ -410,14 +418,20 @@ header {
       max-width: 80%;
     }
     p {
-      max-width: 80%;
+      max-width: 65%;
     }
     @media (max-width: $tablet-bp) {
+      p {
+        max-width: 80%;
+      }
       figure {
         max-width: 65%;
       }
     }
     @media (max-width: $mobile-bp) {
+      p {
+        max-width: 100%;
+      }
       figure {
         max-width: 100%;
       }

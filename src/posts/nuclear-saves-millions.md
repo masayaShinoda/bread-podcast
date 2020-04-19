@@ -1,6 +1,6 @@
 ---
 title: "Nuclear power may have saved millions of lives otherwise lost to fossil fuel"
-date: "14-04-2020"
+date: "25-04-2020"
 ---
 
 Nuclear power is often promoted as a low-carbon source that mitigates fossil fuel emissions and the resulting health damage and deaths caused by air pollution. But is it possible to provide estimates and actually quantify these effects?

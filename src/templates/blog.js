@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import { Helmet } from "react-helmet"
 import { graphql } from "gatsby"
 //styles import
 import blogStyles from "../styles/styles.css"
@@ -18,6 +19,9 @@ export const query = graphql`
 const Blog = props => {
   return (
     <Layout>
+      <Helmet>
+        <title>{props.data.markdownRemark.frontmatter.title}</title>
+      </Helmet>
       <div className="blogTemplate">
         <h1 className="blogPostTitle">
           {props.data.markdownRemark.frontmatter.title}

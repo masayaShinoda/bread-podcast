@@ -332,11 +332,9 @@ header {
 //body
 
 .pageContainer {
-  //min-height: 50vh; //debug
   display: grid;
   grid-template-areas: "special-nav content";
   grid-gap: 5vw;
-  //border: 1px solid red; //debug
   .specialNav {
     grid-area: special-nav;
     display: flex;
@@ -345,7 +343,6 @@ header {
     height: 100%;
     margin-top: 1.1em;
     margin-left: -0.25rem;
-    //border: 1px solid red; //debug
     a {
       display: block;
       max-width: 32px;
@@ -357,7 +354,6 @@ header {
       max-width: 32px;
       max-height: 32px;
       margin-bottom: 10vh;
-      //border: 1px solid green; //debug
     }
   }
   .homepageImage {
@@ -367,16 +363,13 @@ header {
     margin: 0;
     padding: 0;
     grid-area: oontent;
-    //border: 1px solid red;
   }
 }
 @media (max-width: $tablet-bp) {
   .pageContainer {
-    //min-height: 50vh; //debug
     display: grid;
     grid-template-areas: "special-nav content";
     grid-gap: 5vw;
-    //border: 1px solid red; //debug
     .specialNav {
       grid-area: special-nav;
       display: flex;
@@ -385,19 +378,17 @@ header {
       height: 100%;
       margin-top: 1.1em;
       margin-left: -0.25rem;
-      //border: 1px solid red; //debug
       a {
         display: block;
         max-width: 32px;
         max-height: 32px;
-        margin-bottom: 10vh;
+        margin-bottom: 7.5vh;
       }
       img {
         display: block;
         max-width: 32px;
         max-height: 32px;
-        margin-bottom: 10vh;
-        //border: 1px solid green; //debug
+        margin-bottom: 7.5vh;
       }
     }
     .homepageImage {
@@ -407,7 +398,6 @@ header {
       margin: 0;
       padding: 0;
       grid-area: oontent;
-      //border: 1px solid red;
     }
   }
 }

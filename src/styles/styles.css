@@ -11270,13 +11270,13 @@ header .headerLogo:hover::after {
     display: block;
     max-width: 32px;
     max-height: 32px;
-    margin-bottom: 10vh;
+    margin-bottom: 7.5vh;
   }
   .pageContainer .specialNav img {
     display: block;
     max-width: 32px;
     max-height: 32px;
-    margin-bottom: 10vh;
+    margin-bottom: 7.5vh;
   }
   .pageContainer .homepageImage {
     display: block;

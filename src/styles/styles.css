@@ -11241,44 +11241,96 @@ header .headerLogo:hover::after {
   grid-area: oontent;
 }
 
-@media (max-width: 480px) {
-  .homepageContainer {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-rows: "homepage-image" "special-nav";
-        grid-template-rows: "homepage-image" "special-nav";
-  }
-  .homepageContainer .specialNav {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: special-nav;
-  }
-  .homepageContainer .specialNav img {
-    max-width: 16px;
-  }
-  .homepageContainer .homepageImage {
-    display: block;
-    position: relative;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    grid-area: homepage-image;
-  }
-}
-
 @media (max-width: 1023px) {
-  .homepageContainer {
+  .pageContainer {
     display: -ms-grid;
     display: grid;
         grid-template-areas: "special-nav content";
+    grid-gap: 5vw;
   }
-  .homepageContainer .homepageImage {
+  .pageContainer .specialNav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: special-nav;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    margin-top: 1.1em;
+    margin-left: -0.25rem;
+  }
+  .pageContainer .specialNav a {
+    display: block;
+    max-width: 32px;
+    max-height: 32px;
+    margin-bottom: 10vh;
+  }
+  .pageContainer .specialNav img {
+    display: block;
+    max-width: 32px;
+    max-height: 32px;
+    margin-bottom: 10vh;
+  }
+  .pageContainer .homepageImage {
     display: block;
     position: relative;
     max-width: 100%;
     margin: 0;
     padding: 0;
-    grid-area: homepage-image;
+    grid-area: oontent;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageContainer {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "special-nav content";
+    grid-gap: 7.5vw;
+  }
+  .pageContainer .specialNav {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: special-nav;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    margin-top: 1.1em;
+  }
+  .pageContainer .specialNav a {
+    display: block;
+    max-width: 24px;
+    max-height: 24px;
+    margin-bottom: 7.5vh;
+  }
+  .pageContainer .specialNav img {
+    display: block;
+    max-width: 24px;
+    max-height: 24px;
+    margin-bottom: 7.5vh;
+  }
+  .pageContainer .homepageImage {
+    display: block;
+    position: relative;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-area: oontent;
   }
 }
 

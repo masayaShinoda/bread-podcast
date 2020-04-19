@@ -370,18 +370,34 @@ header {
     //border: 1px solid red;
   }
 }
-@media (max-width: $mobile-bp) {
-  .homepageContainer {
+@media (max-width: $tablet-bp) {
+  .pageContainer {
     //min-height: 50vh; //debug
     display: grid;
-    grid-template-rows:
-      "homepage-image"
-      "special-nav";
+    grid-template-areas: "special-nav content";
+    grid-gap: 5vw;
     //border: 1px solid red; //debug
     .specialNav {
       grid-area: special-nav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      margin-top: 1.1em;
+      margin-left: -0.25rem;
+      //border: 1px solid red; //debug
+      a {
+        display: block;
+        max-width: 32px;
+        max-height: 32px;
+        margin-bottom: 10vh;
+      }
       img {
-        max-width: 16px;
+        display: block;
+        max-width: 32px;
+        max-height: 32px;
+        margin-bottom: 10vh;
+        //border: 1px solid green; //debug
       }
     }
     .homepageImage {
@@ -390,19 +406,39 @@ header {
       max-width: 100%;
       margin: 0;
       padding: 0;
-      grid-area: homepage-image;
+      grid-area: oontent;
       //border: 1px solid red;
     }
   }
 }
-@media (max-width: $tablet-bp) {
-  .homepageContainer {
+@media (max-width: $mobile-bp) {
+  .pageContainer {
     //min-height: 50vh; //debug
     display: grid;
     grid-template-areas: "special-nav content";
-
+    grid-gap: 7.5vw;
     //border: 1px solid red; //debug
     .specialNav {
+      grid-area: special-nav;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      margin-top: 1.1em;
+      //border: 1px solid red; //debug
+      a {
+        display: block;
+        max-width: 24px;
+        max-height: 24px;
+        margin-bottom: 7.5vh;
+      }
+      img {
+        display: block;
+        max-width: 24px;
+        max-height: 24px;
+        margin-bottom: 7.5vh;
+        //border: 1px solid green; //debug
+      }
     }
     .homepageImage {
       display: block;
@@ -410,7 +446,7 @@ header {
       max-width: 100%;
       margin: 0;
       padding: 0;
-      grid-area: homepage-image;
+      grid-area: oontent;
       //border: 1px solid red;
     }
   }

@@ -1,6 +1,6 @@
 backend:
   name: github
-   repo: masayaShinoda/bread-podcast
+  repo: masayaShinoda/bread-podcast
 
 media_folder: static/assets
 public_folder: /assets

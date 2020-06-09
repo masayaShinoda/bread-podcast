@@ -34,10 +34,11 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`, //tells gatsby to source content from filesystem, which is src dir
+        path: `${__dirname}/blog`, //tells gatsby to source content from filesystem, which is src dir
       },
     },
     "gatsby-transformer-remark",
+    `gatsby-plugin-netlify-cms`,
 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

@@ -16,3 +16,4 @@ _To combat climate change, the world must rapidly reduce its dependency on fossi
 
 
 The United Nations recognises climate change as “the most systemic threat to humankind”. Despite this, carbon dioxide emissions related to energy continue to rise – reaching 33.1 billion tonnes in 2018, a record high, and have increased by more than 40% since 2000.
+

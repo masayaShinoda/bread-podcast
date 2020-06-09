@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Helmet from "react-helmet"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,6 +18,12 @@ import blogIcon from "../assets/blog-icon.png"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Helmet>
+      <meta
+        name="google-site-verification"
+        content="dtDhOJSceGQthNEuySpWSKk9bA-RTIjrDtmxqHPhsh8"
+      />
+    </Helmet>
     <div className="pageContainer">
       <section className="specialNav">
         <Link to="/">

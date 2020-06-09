@@ -1,6 +1,6 @@
 ---
 path: backend-blog-test
-date: 2020-06-09
+date: 9/6/2020
 title: Backend blog test
 ---
 

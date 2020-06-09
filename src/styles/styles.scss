@@ -332,8 +332,7 @@ header {
 //body
 
 .pageContainer {
-  display: grid;
-  grid-template-areas: "special-nav content";
+  display: flex;
   grid-gap: 5vw;
   .specialNav {
     grid-area: special-nav;
@@ -341,6 +340,7 @@ header {
     flex-direction: column;
     align-items: center;
     height: 100%;
+    width: fit-content;
     margin-top: 1.1em;
     margin-left: -0.25rem;
     a {
@@ -367,9 +367,6 @@ header {
 }
 @media (max-width: $tablet-bp) {
   .pageContainer {
-    display: grid;
-    grid-template-areas: "special-nav content";
-    grid-gap: 5vw;
     .specialNav {
       grid-area: special-nav;
       display: flex;
@@ -404,9 +401,6 @@ header {
 @media (max-width: $mobile-bp) {
   .pageContainer {
     //min-height: 50vh; //debug
-    display: grid;
-    grid-template-areas: "special-nav content";
-    grid-gap: 7.5vw;
     //border: 1px solid red; //debug
     .specialNav {
       grid-area: special-nav;
@@ -445,6 +439,7 @@ header {
 // blog page blog.js
 .blogContainer {
   grid-area: content;
+  width: 100%;
   ul {
     list-style-type: none;
     margin: 0;

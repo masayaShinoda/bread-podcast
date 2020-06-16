@@ -6,6 +6,6 @@ featuredImage: https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixli
 ---
 In this article, I will help outline the fundamentals of modern web design, and suggest ways you can either learn for the first time, or improve whatever skills you already have.
 
-This tutorial involves a lot of coding. 
+This tutorial involves **a lot** of coding. 
 
 ## Contents:
